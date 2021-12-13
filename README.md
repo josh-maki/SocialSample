@@ -2,7 +2,7 @@
 This is a sample social media application based on Kubernetes.
 
 **Component services**
-1. API gateway. Serves as intermediary between end client (user web browser) and back-end services. Displays UI. Based on Kong.
+1. API gateway. Serves as intermediary between end client (user web browser) and back-end services. Displays UI. Rate limiting. Based on Kong.
 2. Authentication service. Produces JWT token so that users can log in. Based on MongoDB.
 3. Friend feed service. Displays latest posts from accounts that the user is following. Based on Kafka. 
 4. News feed service. Displays other trending posts at bottom of friend feed service.
