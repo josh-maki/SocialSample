@@ -1,7 +1,7 @@
 # SocialSample
 This is a sample social media application based on Kubernetes.
 
-**It consists of several components: **
+**Component services**
 1. API gateway. Serves as intermediary between end client (user web browser) and back-end services. Displays UI. Based on Kong.
 2. Authentication service. Produces JWT token so that users can log in. Based on MongoDB.
 3. Friend feed service. Displays latest posts from accounts that the user is following. Based on Kafka. 
@@ -13,7 +13,7 @@ This is a sample social media application based on Kubernetes.
 9. Audit logging service. For auditing data access, etc.
 10. Notification service. Alerts users when close friends make a post, when one of the user's posts are liked, when the user receives a message.
 
-**Productionization: **
+**Productionization**
 1. Debugging: Logging service.
 2. Security: Audit logging. Minimal user access settings. Pods only accept requests from known IPs.
 3. HA: replication
